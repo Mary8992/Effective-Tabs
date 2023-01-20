@@ -52,7 +52,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
-.container .icon .iconBx:hover {
+.container .icon .iconBx.active {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -72,7 +72,7 @@ body {
     -o-transform: scale(0.8);
 }
 
-.container .icon .iconBx:hover img {
+.container .icon .iconBx.active img {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
     transform: scale(1);
@@ -82,3 +82,41 @@ body {
     -o-transform: scale(1);
 }
 
+.content {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.content .contentBx {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    opacity: 0;
+}
+
+.content .contentBx.active {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
+}
+
+.content .contentBx h2 {
+    font-size: 3em;
+}
