@@ -115,6 +115,7 @@ body {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     opacity: 1;
+    transition-delay: 0.5s;
 }
 
 .content .contentBx h2 {
